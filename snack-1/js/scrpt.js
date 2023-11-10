@@ -1,11 +1,13 @@
-const etaA= prompt(`Quanti anni hai?`);
-console.log(etaA);
-const etaB= prompt(`Quanti anni hai?`);
-console.log(etaB);
+const etaA= parseInt(prompt(`Quanti anni hai?`));
+const etaB= parseInt(prompt(`Quanti anni hai?`));
 
-if (etaA >=0 && etaA <30){
+
+if (etaA > etaB) {
     console.log(`più piccolo`);
 }
-else if (etaB >=30 && etaB >30){
+else if (etaB > etaA ){
     console.log(`più grande`);
+}
+else{
+    console.log(`l'età è la stessa`)
 }
